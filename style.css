@@ -1,0 +1,105 @@
+html {
+  background-color: ;
+  font-size: 20px;
+}
+
+
+.container{
+  animation-duration: 3s;
+  animation-name: slidein; 
+  line-height:100px;
+  width: 100%;
+  text-align:center;
+  background-color:#3e5773;
+  
+  background: linear-gradient(#3e5773,60%,#bdbec1);
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 250%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+.test{
+  text-align: right;
+ 
+  animation: slideinLeft 3s;
+}
+
+@keyframes slideinLeft {
+  from{
+  margin-left: -250%;
+    width: 250%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+}
+
+.outer{
+  text-align: center;
+  
+}
+.inner{
+  display: inline-block;
+  text-align: left;
+}
+  
+.example{
+    display: flex;
+    background: #2e5773;
+    border: 1px solid #999;
+    padding: 10px;
+    
+    animation-name:fadeInAnime;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.example>div{
+    width: 50%;
+    background: #FFF;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+h2{
+  background: #9dc8dd ;
+  
+}
+
+.example>div>p{
+  background: #3e5773;
+  color: #bdbec1;
+
+}
+
+.example>div>el>li{
+  background: #3e5773 ;
+  color: #bdbec1;
+}
+
+a{
+  color: #bdbec1; 
+  font-weight: bold;
+ }
+ 
